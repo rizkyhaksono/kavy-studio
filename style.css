@@ -436,7 +436,7 @@ input {
 #hero-title {
   position: absolute;
   font-family: "Playfair Display";
-  top: 55%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

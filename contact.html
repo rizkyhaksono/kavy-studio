@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="harrnish - ig@harrnish" />
     <link rel="icon" href="yourIconUrl" type="image/gif" sizes="16x16" />
-    <title>Contact - wordoutlet</title>
+    <title>Contact - kavystudios</title>
 
     <!-- external stylesheet -->
     <link rel="stylesheet" href="style.css" />
@@ -40,7 +40,7 @@
           <ion-icon name="menu"></ion-icon>
         </div>
         <div class="brand">
-          <span><a href="index.html">wordoutlet</a></span>
+          <span><a href="index.html">kavystudios</a></span>
         </div>
         <div class="cart">
           <ion-icon name="cart"></ion-icon>
@@ -52,16 +52,14 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">collection</a></li>
-            <li><a href="product.html">Product</a></li>
             <li><a href="about.html">Our story</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="media-menu">
             <ul>
-              <li><ion-icon name="logo-facebook"></ion-icon></li>
-              <li><ion-icon name="logo-instagram"></ion-icon></li>
-              <li><ion-icon name="logo-twitter"></ion-icon></li>
-              <li><ion-icon name="logo-pinterest"></ion-icon></li>
+              <li>
+                <a href="https://www.instagram.com/kavystudios/"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+              </li>
             </ul>
           </div>
         </div>
@@ -70,37 +68,46 @@
       <!-- NAVIGATION ENDS -->
 
       <!-- DATA SECTION STARS -->
-
+      
       <div class="about-hero">
         <div class="container-fluid hero wow fadeInUp">
           <h1 id="hero-title">Contact us</h1>
         </div>
+        
+        <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+          <strong class="succeed">Succeed!</strong>your message has been uploaded.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
 
         <div class="container content">
-          <p class="wow fadeInUp">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat optio expedita minus accusantium facere placeat magnam maiores nulla magni dolore blanditiis eligendi, aliquam odio voluptates cum ut officia sit nemo.
-          </p>
 
-          <form>
+          <form name="kavystudio">
             <div class="form-group">
               <label>Name</label>
-              <input type="text" class="form-control wow fadeInUp" data-wow-delay="0.5s" />
+              <input type="text" class="form-control wow fadeInUp" data-wow-delay="0.5s" name="nama" />
             </div>
 
             <div class="form-group">
               <label>E-mail</label>
-              <input type="email" class="form-control wow fadeInUp" data-wow-delay="0.7s" />
+              <input type="email" class="form-control wow fadeInUp" data-wow-delay="0.7s" name="email" />
             </div>
 
             <div class="form-group">
               <label>Message</label>
-              <textarea rows="3" class="form-control wow fadeInUp" data-wow-delay="0.8s"></textarea>
+              <textarea rows="3" class="form-control wow fadeInUp" data-wow-delay="0.8s" name="pesan"></textarea>
             </div>
 
             <div class="add-prod wow fadeInUp" data-wow-delay="0.2s">
-              <a href="#">SUBMIT</a>
+              <button type="submit" class="btn btn-secondary">Submit</button>
             </div>
+
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+
           </form>
+
         </div>
       </div>
 
@@ -111,48 +118,19 @@
       <div class="container-fluid footer">
         <div class="section container">
           <footer>
-            <div class="row">
+            <div class="row -flex justify-content-center">
               <div class="col-lg-3 block">
                 <p>
-                  Kerobokan, Apel Manis Street,
-                  <br />
-                  Madiun, Jawa Timur. 63132,
+                  Jakarta Pusat.
                   <br />
                   Indonesia
-                </p>
-              </div>
-              <div class="col-lg-3 block">
-                <p>
-                  FAQs
-                  <br />
-                  Return Policy
-                  <br />
-                  Shipping
-                </p>
-              </div>
-              <div class="col-lg-3 block">
-                <p>
-                  Careers
-                  <br />
-                  Community
-                  <br />
-                  Wholesale
                 </p>
               </div>
               <div class="col-lg-3 block">
                 <div class="media">
                   <ul>
                     <li>
-                      <a href="https://www.facebook.com/"><ion-icon size="large" ios="logo-facebook" md="logo-facebook" name="logo-facebook"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/rizkyhaksonoo/"><ion-icon ios="logo-instagram" md="logo-instagram" size="large" name="logo-instagram"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href="https://www.twitter.com/"><ion-icon size="large" ios="logo-twitter" md="logo-twitter" name="logo-twitter"></ion-icon></a>
-                    </li>
-                    <li>
-                      <a href="https://www.pinterest.com/"><ion-icon ios="logo-pinterest" md="logo-pinterest" size="large" name="logo-pinterest"></ion-icon></a>
+                      <a href="https://www.instagram.com/kavystudios/"><ion-icon ios="logo-instagram" md="logo-instagram" size="large" name="logo-instagram"></ion-icon></a>
                     </li>
                   </ul>
                 </div>
@@ -194,5 +172,48 @@
         t1.reversed(!t1.reversed());
       });
     </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzcFBh8gmD1vKKh62asGisKNQS-5hIX-tqKFhg6UTtkmzkcGBQDDjOFtj9eQ2cI2Wky9w/exec'
+      const form = document.forms['kavystudio'];
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()        
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            myAlert.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)
+          })
+          
+          .catch(error => console.error('Error!', error.message))
+      });
+    </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzp5fxsDNL_BsxOJsYzRadhOWbKXzQUsWgjXYfsZ5JPTGM_AiTgbXX3XNmMxwwdKFoi8Q/exec';
+  const form = document.forms['rh-contact-form'];
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+  const myAlert = document.querySelector('.my-alert'); //menggunakan . karena didalam class
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    btnLoading.classList.toggle('d-none');
+    btnKirim.classList.toggle('d-none');
+    
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        myAlert.classList.toggle('d-none');
+        form.reset();
+        console.log('Success!', response)
+        })
+      .catch(error => console.error('Error!', error.message))
+  });
+</script>
+
   </body>
 </html>
