@@ -2,5 +2,5 @@
 
 Ecommerce Simple Look
 
-## URL
-https://rizkyhaksono.github.io/Shopedia/
+# Demo Site
+https://rh-shopedia.netlify.app/
